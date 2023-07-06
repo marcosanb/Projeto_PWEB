@@ -20,7 +20,7 @@
       <ul>
         <li><a href="#" style="color: white; margin-right: 10px;">Aposte agora</a></li>
         <li><a href="#" style="color: white; margin-right: 10px;">Cassino</a></li>
-        <li><a href="#" style="color: white; margin-right: 10px;">Sobre</a></li>
+        <li><a href="Sobre.html" style="color: white; margin-right: 10px;">Sobre</a></li>
         <li>
           <div class="imagem"><img
               src="image/R.png"
@@ -113,24 +113,190 @@
     </div>
 </div>
 
+    
+
   <main>
-        <section style="margin-top: -25%;">
-            <div style="display: flex; gap: 20px; justify-content: center;">
-            <img
-            src="https://images2.minutemediacdn.com/image/upload/c_crop,w_3700,h_2081,x_0,y_19/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_pt-BR_international_web/01gzkkreqm3krv6rrvsf.jpg"
-            height="250" width="400" style="position: right;">
-            <a>
-            <img src="https://uploads.metropoles.com/wp-content/uploads/2023/01/02114557/cr7-champions-emprestimo.jpg"
-                height="250" width="271">
+    <section style="margin-top: -25%;">
+        <div style="display: flex; gap: 20px; justify-content: center;">
+    <head>
+      <title>Tabela do Brasileirão</title>
+    </head>
+    <body>
+      <table id="br-table">
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Equipe</th>
+            <th>Pontos</th>
+            <th>Jogos</th>
+            <th>Vitórias</th>
+            <th>Empates</th>
+            <th>Derrotas</th>
+          </tr>
+        </thead>
+        <tbody id="br-table-body">
+          <!-- Os dados da tabela serão inseridos aqui dinamicamente -->
+        </tbody>
+      </table>
+    
+      <script>
+        var tabela = [
+          {
+            posicao: "1°",
+            equipe: "Botafogo",
+            pontos: 33,
+            jogos: 13,
+            vitorias: 11,
+            empates: 0,
+            derrotas: 2
+          },
+
+          {
+            posicao: "2°",
+            equipe: "Grêmio",
+            pontos: 26,
+            jogos: 13,
+            vitorias: 8,
+            empates: 2,
+            derrotas: 3
+          },
+
+          {
+            posicao: "3°",
+            equipe: "Flamengo",
+            pontos: 25,
+            jogos: 13,
+            vitorias: 8,
+            empates: 1,
+            derrotas: 4
+          },
+
+          {
+            posicao: "4°",
+            equipe: "Palmeiras",
+            pontos: 23,
+            jogos: 13,
+            vitorias: 6,
+            empates: 5,
+            derrotas: 2
+          },
+
+          {
+            posicao: "5°",
+            equipe: "Bragantino",
+            pontos: 23,
+            jogos: 13,
+            vitorias: 6,
+            empates: 3,
+            derrotas: 2
+          },
+
+          {
+            posicao: "6°",
+            equipe: "Fluminense",
+            pontos: 20,
+            jogos: 13,
+            vitorias: 6,
+            empates: 3,
+            derrotas: 4
+          },
+
+          {
+            posicao: "7°",
+            equipe: "São Paulo",
+            pontos: 20,
+            jogos: 13,
+            vitorias: 6,
+            empates: 3,
+            derrotas: 4
+          },
+
+          {
+            posicao: "8°",
+            equipe: "Internacional",
+            pontos: 20,
+            jogos: 13,
+            vitorias: 6,
+            empates: 3,
+            derrotas: 4
+          },
+
+          {
+            posicao: "9°",
+            equipe: "Athletico-PR",
+            pontos: 20,
+            jogos: 13,
+            vitorias: 6,
+            empates: 2,
+            derrotas: 5
+          },
+
+          {
+            posicao: "10°",
+            equipe: "Atlético-MG",
+            pontos: 20,
+            jogos: 13,
+            vitorias: 5,
+            empates: 5,
+            derrotas: 3
+          }
+        ];
+    
+        function preencherTabela() {
+          var tableBody = document.getElementById("br-table-body");
+    
+          tableBody.innerHTML = "";
+    
+          for (var i = 0; i < tabela.length; i++) {
+            var equipe = tabela[i];
+            var row = document.createElement("tr");
+    
+            var posicaoCell = document.createElement("td");
+            posicaoCell.textContent = equipe.posicao;
+            row.appendChild(posicaoCell);
+    
+            var equipeCell = document.createElement("td");
+            equipeCell.textContent = equipe.equipe;
+            row.appendChild(equipeCell);
+    
+            var pontosCell = document.createElement("td");
+            pontosCell.textContent = equipe.pontos;
+            row.appendChild(pontosCell);
+    
+            var jogosCell = document.createElement("td");
+            jogosCell.textContent = equipe.jogos;
+            row.appendChild(jogosCell);
+    
+            var vitoriasCell = document.createElement("td");
+            vitoriasCell.textContent = equipe.vitorias;
+            row.appendChild(vitoriasCell);
+    
+            var empatesCell = document.createElement("td");
+            empatesCell.textContent = equipe.empates;
+            row.appendChild(empatesCell);
+    
+            var derrotasCell = document.createElement("td");
+            derrotasCell.textContent = equipe.derrotas;
+            row.appendChild(derrotasCell);
+    
+            tableBody.appendChild(row);
+          }
+        }
+    
+        preencherTabela();
+      </script>
+    </body>
             </div>
-          <h2>Aqui o melhor time é o seu!</h2>
+         
           <nav> 
+             <h2>Aqui o melhor time é o seu!</h2>
             <ul style="justify-content: right;">
                 <li>
                     <button class="meu-botao"> Login </button>
                   </li> 
             </ul>
           </nav>
+        </main>
           <nav>
             <ul style="justify-content: center;">
               <li style="">
@@ -144,7 +310,7 @@
             </ul>
         </nav>
     </section>
-  </main>
+  
   <footer>
     <p>Copyright &copy; 2023 Site do Marcos & Kaio Turma: 923 IFAL-Arapiraca</p>
   </footer>
