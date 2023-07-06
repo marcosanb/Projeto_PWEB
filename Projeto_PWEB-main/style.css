@@ -41,14 +41,15 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
     background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
-
+     font-size: 30px;
+     margin-top: 3rem;
 }
 
 p {
@@ -58,9 +59,9 @@ p {
 header {
     border: 1px solid;
     display: flex;
-    border-color: #ffffff;
+    border-color: black;
     justify-content: space-between;
-    background: linear-gradient(to right, #000080, #0000FF);
+    background-color: black;
 
 }
 
@@ -95,6 +96,7 @@ ul {
 button {
     background-color: #ffffff;
     font-style: inherit;
+    border-radius: 3px;
 }
 
 button:hover {
