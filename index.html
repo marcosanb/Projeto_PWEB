@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>IF.Bet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1><img src="image/IF.Bet-logo.png" width="150" height="84"
+        style="position: absolute; margin-top: -31px; margin-left: -15px;"></h1>
+    <nav>
+      <ul>
+        <li><a href="Bingo.html" style="color: white; margin-right: 10px;">Bingo</a></li>
+        <li><a href="Cassino.html" style="color: white; margin-right: 10px;">Cassino</a></li>
+        <li><a href="Sobre.html" style="color: white; margin-right: 10px;">Sobre</a></li>
+        <li>
+          <div class="imagem"><img src="image/R.png" width="30"
+              style="margin-top: -0.1px; margin-left: -0.1px; border-radius: 30px;"></div>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <div style="margin-top: 10%">
+    <div style="display: flex; flex-direction: column; width: 10rem;">
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Futebol</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Basquete</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Vôlei</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Boxe</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Tênis</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Fórmula1</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Esports</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">MMA</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Beisebol</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Handebol</td>
+          </tr>
+        </table>
+      </button>
+      <button>
+        <table>
+          <tr>
+            <td colspan="3">Futsal</td>
+          </tr>
+        </table>
+      </button>
+    </div>
+  </div>
+
+
+
+  <main>
+    <section style="margin-top: -22%;">
+      <div style="display: flex; gap: 20px; justify-content: center;">
+
+        <head>
+          <title>Tabela do Brasileirão</title>
+        </head>
+
+        <body>
+          <table id="br-table">
+            <thead>
+              <tr>
+                <th>Posição</th>
+                <th>Equipe</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+                <th>Vitórias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+              </tr>
+            </thead>
+            <tbody id="br-table-body">
+            </tbody>
+          </table>
+
+          <script>
+            var tabela = [
+              {
+                posicao: "1°",
+                equipe: "Botafogo",
+                pontos: 33,
+                jogos: 13,
+                vitorias: 11,
+                empates: 0,
+                derrotas: 2
+              },
+
+              {
+                posicao: "2°",
+                equipe: "Grêmio",
+                pontos: 26,
+                jogos: 13,
+                vitorias: 8,
+                empates: 2,
+                derrotas: 3
+              },
+
+              {
+                posicao: "3°",
+                equipe: "Flamengo",
+                pontos: 25,
+                jogos: 13,
+                vitorias: 8,
+                empates: 1,
+                derrotas: 4
+              },
+
+              {
+                posicao: "4°",
+                equipe: "Palmeiras",
+                pontos: 23,
+                jogos: 13,
+                vitorias: 6,
+                empates: 5,
+                derrotas: 2
+              },
+
+              {
+                posicao: "5°",
+                equipe: "Bragantino",
+                pontos: 23,
+                jogos: 13,
+                vitorias: 6,
+                empates: 3,
+                derrotas: 2
+              },
+
+              {
+                posicao: "6°",
+                equipe: "Fluminense",
+                pontos: 20,
+                jogos: 13,
+                vitorias: 6,
+                empates: 3,
+                derrotas: 4
+              },
+
+              {
+                posicao: "7°",
+                equipe: "São Paulo",
+                pontos: 20,
+                jogos: 13,
+                vitorias: 6,
+                empates: 3,
+                derrotas: 4
+              },
+
+              {
+                posicao: "8°",
+                equipe: "Internacional",
+                pontos: 20,
+                jogos: 13,
+                vitorias: 6,
+                empates: 3,
+                derrotas: 4
+              },
+
+              {
+                posicao: "9°",
+                equipe: "Athletico-PR",
+                pontos: 20,
+                jogos: 13,
+                vitorias: 6,
+                empates: 2,
+                derrotas: 5
+              },
+
+              {
+                posicao: "10°",
+                equipe: "Atlético-MG",
+                pontos: 20,
+                jogos: 13,
+                vitorias: 5,
+                empates: 5,
+                derrotas: 3
+              }
+            ];
+
+            function preencherTabela() {
+              var tableBody = document.getElementById("br-table-body");
+
+              tableBody.innerHTML = "";
+
+              for (var i = 0; i < tabela.length; i++) {
+                var equipe = tabela[i];
+                var row = document.createElement("tr");
+
+                var posicaoCell = document.createElement("td");
+                posicaoCell.textContent = equipe.posicao;
+                row.appendChild(posicaoCell);
+
+                var equipeCell = document.createElement("td");
+                equipeCell.textContent = equipe.equipe;
+                row.appendChild(equipeCell);
+
+                var pontosCell = document.createElement("td");
+                pontosCell.textContent = equipe.pontos;
+                row.appendChild(pontosCell);
+
+                var jogosCell = document.createElement("td");
+                jogosCell.textContent = equipe.jogos;
+                row.appendChild(jogosCell);
+
+                var vitoriasCell = document.createElement("td");
+                vitoriasCell.textContent = equipe.vitorias;
+                row.appendChild(vitoriasCell);
+
+                var empatesCell = document.createElement("td");
+                empatesCell.textContent = equipe.empates;
+                row.appendChild(empatesCell);
+
+                var derrotasCell = document.createElement("td");
+                derrotasCell.textContent = equipe.derrotas;
+                row.appendChild(derrotasCell);
+
+                tableBody.appendChild(row);
+              }
+            }
+
+            preencherTabela();
+          </script>
+        </body>
+      </div>
+
+      <nav>
+        <h2>Aqui o melhor time é o seu!</h2>
+        <ul style="justify-content: right;">
+          <li>
+            <button class="meu-botao"> Login </button>
+          </li>
+        </ul>
+      </nav>
+  </main>
+  <nav>
+    <ul style="justify-content: center; margin-top: 6%;">
+      <li style="">
+        <img src="image/fifa.png" width="145" style="position: relative;">
+        <img src="image/pleague.png" width="145" style="position: relative;">
+        <img src="image/uefa.png" width="110" style="position: relative;">
+        <img src="image/la-liga.png" height="80" width="220" style="position: relative;">
+        <img src="image/bras1.png" width="165" style="position: relative;">
+        <img src="image/2026.png" width="80" style="position: relative;">
+      </li>
+    </ul>
+  </nav>
+  <footer>
+    <p>Copyright &copy; 2023 Site do Marcos & Kaio Turma: 923 IFAL-Arapiraca</p>
+  </footer>
+</body>
+</html>
